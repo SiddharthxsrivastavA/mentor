@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import axios from "axios";
+import BannerSlider from "@/components/BannerSlider";
 import {
   Select,
   SelectContent,
@@ -221,14 +222,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-        <div className="   w-full relative overflow-hidden   ">
-            <img src="/photos/mentorsBanner.jpg" alt="Main Banner"
-            width={1920}
-            height={400}
-            className=" w-full h-auto object-cover "
-            
-             />
-        </div>
+      {/* bannerSlider */}
+      <BannerSlider/>
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col lg:flex-row gap-8">
         {/* Results Section */}
